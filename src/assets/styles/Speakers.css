@@ -223,6 +223,8 @@
     max-height: 100vh;
     max-width: 95vh;
     overflow-y: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .modal-close{
     color: white;
