@@ -30,7 +30,7 @@ const speakersData = [
     bio: "Amara leads design teams to create products that consider the full spectrum of human abilities and experiences. Her award-winning work has transformed how companies approach inclusive design.",
     topics: ["Inclusive UX", "Design Systems", "User Research"],
     image: "/images/speakers/speaker-3.jpg",
-    pronouns: "they/them"
+    pronouns: "he/him"
   },
   {
     id: 4,
@@ -60,7 +60,7 @@ const speakersData = [
     bio: "Kenji creates gaming experiences that are accessible to players with diverse abilities. His studio has pioneered innovative control systems and adaptive gameplay features.",
     topics: ["Accessible Gaming", "Adaptive Controls", "Universal Design"],
     image: "/images/speakers/speaker-6.jpg",
-    pronouns: "he/him"
+    pronouns: "she/her"
   }
 ];
 

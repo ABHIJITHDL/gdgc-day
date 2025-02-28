@@ -120,25 +120,8 @@
   margin-bottom: 0.25rem;
 }
 
-.schedule-notes {
-  background-color: rgba(74, 142, 255, 0.05);
-  padding: 2rem;
-  border-radius: var(--border-radius);
-  margin-bottom: 3rem;
-  color: var(--color-text);
-}
-
-.schedule-notes h3 {
+.section-title{
   margin-bottom: 1rem;
-  color: var(--color-text);
-}
-
-.schedule-notes ul {
-  padding-left: 1.5rem;
-}
-
-.schedule-notes li {
-  margin-bottom: 0.75rem;
 }
 
 .calendar-download {

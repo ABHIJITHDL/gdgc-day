@@ -49,18 +49,10 @@ const Footer = () => {
             </address>
           </div>
           
-          <div className="footer-section">
-            <h3>Accessibility Statement</h3>
-            <p>
-              We are committed to making this event accessible to all participants. 
-              If you need specific accommodations, please contact us at <a href="mailto:accessibility@techxinclusivity.edu">accessibility@techxinclusivity.edu</a>.
-            </p>
-            <a href="#accessibility-statement" className="btn btn-small">Read Full Statement</a>
-          </div>
         </div>
         
         <div className="footer-bottom">
-          <div className="language-selector-footer">
+          {/* <div className="language-selector-footer">
             <label htmlFor="language-select-footer">Language:</label>
             <select id="language-select-footer" aria-label="Select language">
               <option value="en">English</option>
@@ -69,24 +61,12 @@ const Footer = () => {
               <option value="zh">中文</option>
               <option value="hi">हिन्दी</option>
             </select>
-          </div>
+          </div> */}
           
           <p className="copyright">
-            &copy; {new Date().getFullYear()} Tech X Inclusivity. All rights reserved.
+            GDGC On Campus TKMCE
           </p>
           
-          <div className="legal-links">
-            <a href="#privacy">Privacy Policy</a>
-            <a href="#terms">Terms of Use</a>
-            <a href="#cookie">Cookie Policy</a>
-          </div>
-        </div>
-        
-        <div className="certification">
-          <p>
-            <img src="/images/wcag-2.1-logo.png" alt="WCAG 2.1 AA Compliant" width="60" />
-            This website meets WCAG 2.1 AA accessibility standards.
-          </p>
         </div>
       </div>
     </footer>

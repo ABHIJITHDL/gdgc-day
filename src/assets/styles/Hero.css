@@ -18,7 +18,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay */
 }
 
 .hero-content {
@@ -26,20 +26,22 @@
   z-index: 2;
   max-width: 800px;
   padding: 2rem;
+  color: white; /* Ensure text is white for better contrast */
 }
 
 .hero h1 {
-  font-size: 4rem;
+  font-size: calc(var(--font-size-base) * 2.5);
   margin-bottom: 1.5rem;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
 }
 
 .hero p {
-  font-size: 1.25rem;
+  font-size: calc(var(--font-size-base) * 1.25);
   margin-bottom: 2rem;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
 }
 
 .hero-buttons {
@@ -64,7 +66,7 @@
 
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: var(--color-primary-dark);
+  background-color: var(--color-secondary);
   transform: translateY(-2px);
 }
 
@@ -103,7 +105,7 @@
 }
 
 .countdown-number {
-  font-size: 2.5rem;
+  font-size: calc(var(--font-size-base) * 1.5);
   font-weight: bold;
   background: rgba(255, 255, 255, 0.2);
   padding: 0.5rem 1rem;
@@ -143,11 +145,11 @@
 /* Responsive styles */
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 2.5rem;
+    font-size: calc(var(--font-size-base) * 1.5);
   }
   
   .hero p {
-    font-size: 1rem;
+    font-size: calc(var(--font-size-base) * 0.75);
   }
   
   .countdown {
@@ -155,7 +157,7 @@
   }
   
   .countdown-number {
-    font-size: 1.75rem;
+    font-size: calc(var(--font-size-base) * 1.1);
     min-width: 3rem;
   }
 }

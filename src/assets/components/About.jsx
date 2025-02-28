@@ -51,21 +51,6 @@ const About = () => {
               </li>
             </ul>
           </div>
-          
-          <div className="about-video">
-            <div className="video-container">
-              <iframe 
-                title="Event Promo Video"
-                src="about:blank" 
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-              <p className="video-caption">
-                Watch our event promo video with closed captions available in multiple languages
-              </p>
-            </div>
-          </div>
         </div>
         
         <div className="event-details">
@@ -93,7 +78,7 @@ const About = () => {
             <div className="detail-text">
               <h4>Registration</h4>
               <p>Free for all students</p>
-              <p>$20 for professionals</p>
+              <p>500rs for professionals</p>
             </div>
           </div>
         </div>

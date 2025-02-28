@@ -136,7 +136,7 @@
 .reset-button {
   width: 100%;
   padding: 10px;
-  background-color: #f44336;
+  background-color: var(--color-primary);
   color: white;
   border: none;
   border-radius: var(--border-radius);
