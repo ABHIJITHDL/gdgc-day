@@ -99,10 +99,12 @@
 
 .navbar-toggle-icon::before {
   top: -8px;
+  right: 0px;
 }
 
 .navbar-toggle-icon::after {
   bottom: -8px;
+  right: 0px;
 }
 
 @media (max-width: 768px) {
