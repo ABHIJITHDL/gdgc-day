@@ -30,7 +30,7 @@ const speakersData = [
     bio: "Amara leads design teams to create products that consider the full spectrum of human abilities and experiences. Her award-winning work has transformed how companies approach inclusive design.",
     topics: ["Inclusive UX", "Design Systems", "User Research"],
     image: "/images/speakers/speaker-3.jpg",
-    pronouns: "he/him"
+    pronouns: "they/them"
   },
   {
     id: 4,

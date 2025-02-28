@@ -36,7 +36,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top; /* Ensure the top portion of the image is displayed */
+  object-position: 100% 16%; 
   transition: transform 0.5s ease;
 }
 
@@ -124,7 +124,7 @@
 
 .modal-content {
   /* background-color: rgba(0,0,0,0.1); */
-  background-color: color-mix(in srgb, var(--color-background) 80%, transparent);
+  background-color: color-mix(in srgb, var(--color-background) 90%, transparent);
   border-radius: var(--border-radius);
   max-width: 900px;
   width: 100%;
@@ -217,4 +217,15 @@
   .speakers-grid {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
+
+  .modal-content{
+    background-color: var(--color-background);
+    max-height: 100vh;
+    max-width: 95vh;
+    overflow-y: auto;
+  }
+  .modal-close{
+    color: white;
+  }
+
 }
