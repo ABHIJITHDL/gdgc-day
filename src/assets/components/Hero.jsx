@@ -28,6 +28,7 @@ const Hero = () => {
 
   return (
     <section className="hero">
+       <img src="group.jpeg" alt="Group Image" className="hero-background" />
       <div className="hero-overlay"></div>
       <div className="container hero-content">
         <h1>Tech X Inclusivity</h1>
