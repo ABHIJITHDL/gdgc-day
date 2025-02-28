@@ -1,0 +1,246 @@
+/* Base Styles */
+:root {
+  --font-size-base: 16px;
+  --color-primary: #4361ee;
+  --color-secondary: #7209b7;
+  --color-accent: #f72585;
+  --color-background: #ffffff;
+  --color-text: #333333;
+  --color-text-light: #777777;
+  --transition-speed: 0.3s;
+  --spacing-unit: 8px;
+  --border-radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+/* Containers */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 calc(var(--spacing-unit) * 2);
+}
+
+.section {
+  padding: calc(var(--spacing-unit) * 8) 0;
+}
+
+/* Color Modes */
+
+/* Normal mode is default */
+
+/* Deuteranopia (red-green color blindness) */
+.mode-deuteranopia {
+  --color-primary: #0072B2;
+  --color-secondary: #56B4E9;
+  --color-accent: #009E73;
+}
+
+/* Protanopia (red color blindness) */
+.mode-protanopia {
+  --color-primary: #0072B2;
+  --color-secondary: #56B4E9;
+  --color-accent: #E69F00;
+}
+
+/* Tritanopia (blue-yellow color blindness) */
+.mode-tritanopia {
+  --color-primary: #D55E00;
+  --color-secondary: #CC79A7;
+  --color-accent: #E69F00;
+}
+
+/* Monochrome */
+.mode-monochrome {
+  --color-primary: #555555;
+  --color-secondary: #777777;
+  --color-accent: #333333;
+}
+
+/* Contrast Modes */
+
+/* Standard is default */
+
+/* High Contrast */
+.contrast-high {
+  --color-background: #000000;
+  --color-text: #ffffff;
+  --color-text-light: #eeeeee;
+  --color-primary: #ffff00;
+  --color-secondary: #00ffff;
+  --color-accent: #ff00ff;
+}
+
+/* Dark Mode */
+.contrast-dark {
+  --color-background: #121212;
+  --color-text: #ffffff;
+  --color-text-light: #aaaaaa;
+  --color-primary: #bb86fc;
+  --color-secondary: #03dac6;
+  --color-accent: #cf6679;
+}
+
+/* Light Mode */
+.contrast-light {
+  --color-background: #ffffff;
+  --color-text: #121212;
+  --color-text-light: #555555;
+}
+
+/* Sepia Mode */
+.contrast-sepia {
+  --color-background: #f1e7d0;
+  --color-text: #5f4b32;
+  --color-text-light: #705e46;
+  --color-primary: #704214;
+  --color-secondary: #882f01;
+  --color-accent: #a52a2a;
+}
+
+/* Font Families */
+
+/* Default is set in body */
+
+/* Dyslexia-friendly */
+.font-dyslexic {
+  font-family: 'OpenDyslexic', 'Comic Sans MS', cursive;
+  letter-spacing: 0.05em;
+  word-spacing: 0.1em;
+}
+
+/* Serif */
+.font-serif {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Sans */
+.font-sans {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Letter Spacing */
+
+/* Normal is default */
+
+.letter-spacing-wide {
+  letter-spacing: 0.05em;
+}
+
+.letter-spacing-wider {
+  letter-spacing: 0.1em;
+}
+
+/* Line Spacing */
+
+/* Normal is default */
+
+.line-spacing-wide {
+  line-height: 1.8;
+}
+
+.line-spacing-wider {
+  line-height: 2.2;
+}
+
+/* Animation Control */
+.reduce-animations * {
+  transition: none !important;
+  animation: none !important;
+}
+
+/* Common Components */
+.button {
+  display: inline-block;
+  padding: calc(var(--spacing-unit) * 1.5) calc(var(--spacing-unit) * 3);
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color var(--transition-speed), transform var(--transition-speed);
+}
+
+.button:hover:not(:disabled) {
+  background-color: var(--color-secondary);
+  transform: translateY(-2px);
+}
+
+.button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.card {
+  background-color: var(--color-background);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: calc(var(--spacing-unit) * 3);
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.mb-1 { margin-bottom: calc(var(--spacing-unit) * 1); }
+.mb-2 { margin-bottom: calc(var(--spacing-unit) * 2); }
+.mb-3 { margin-bottom: calc(var(--spacing-unit) * 3); }
+.mb-4 { margin-bottom: calc(var(--spacing-unit) * 4); }
+.mb-5 { margin-bottom: calc(var(--spacing-unit) * 5); }
+
+.mt-1 { margin-top: calc(var(--spacing-unit) * 1); }
+.mt-2 { margin-top: calc(var(--spacing-unit) * 2); }
+.mt-3 { margin-top: calc(var(--spacing-unit) * 3); }
+.mt-4 { margin-top: calc(var(--spacing-unit) * 4); }
+.mt-5 { margin-top: calc(var(--spacing-unit) * 5); }
+
+.hidden {
+  display: none !important;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Responsive Utilities */
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .hide-desktop {
+    display: none !important;
+  }
+}
